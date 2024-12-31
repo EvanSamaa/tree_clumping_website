@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Looping YouTube Video</title>
   <style>
-    /* Remove page margins and make the iframe fill the entire window */
     html, body {
       margin: 0;
       padding: 0;
@@ -17,35 +16,16 @@
       left: 0;
       width: 100%;
       height: 100%;
-      border: none; /* remove frame border */
+      border: 0;
     }
   </style>
 </head>
 <body>
-  <!-- 
-    Explanation of parameters:
-      autoplay=1   : Start automatically
-      mute=1       : Mute audio (required by most browsers for autoplay)
-      loop=1       : Loop video
-      playlist=    : The same video ID so it loops the same video
-      controls=0   : Hide video controls
-      disablekb=1  : Disable keyboard controls (so user can’t pause via spacebar)
-      fs=0         : Disable fullscreen button
-      modestbranding=1 : Remove most YouTube branding
-      rel=0        : Disable related videos after playback
-  -->
   <iframe 
-    src="https://www.youtube.com/embed/SpgXNTVBSe0
-          ?autoplay=1
-          &mute=1
-          &loop=1
-          &playlist=SpgXNTVBSe0
-          &controls=0
-          &disablekb=1
-          &fs=0
-          &modestbranding=1
-          &rel=0"
-    allow="autoplay; encrypted-media">
+    src="https://www.youtube.com/embed/SpgXNTVBSe0?autoplay=1&mute=1&loop=1&playlist=SpgXNTVBSe0&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0"
+    allow="autoplay; encrypted-media"
+    frameborder="0"
+    allowfullscreen>
   </iframe>
 </body>
 </html>
